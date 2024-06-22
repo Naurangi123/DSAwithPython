@@ -1,41 +1,36 @@
-class Stack: 
-    def __init__(self) -> None:
-        self.st = []
 
-    def isempty(self):
-        return self.st == []
-    
-    def push(self, element):
-        self.st.append(element)
+def stack(s):
+    if s==0:
+        return True
+    else:
+        return False
 
-    def pop(self):
-        if self.isempty():
-            return -1
-        else:
-            return self.st.pop()
-    def peep(self):
-        if self.isempty():
-            return -1
-        else:
-            return self.st[-1]
+# def push(s,x):
+#     s=[]
+#     while(s!=x):
+#         s=+1
+#         s=x
+#     return s
 
-    def search(self, element):
-        if self.isempty():
-            return -1
-        else:
-            try:
-                n = self.st.index(element)
-                return len(self.st) - n
-            except ValueError:
-                return -2
+# def push1(s,x):
+#     s.append(x)
+#     return x
 
-    def display(self):
-        return self.st
-    
-stk = Stack()
-print(stk.isempty())
-print(stk.push([1, 2, 3, 4, 5, 6, 7, 8]))
-print(stk.pop())
-print(stk.peep())
-print(stk.search(3))
-print(stk.display())
+def push(s, x, index):
+    l = []
+    for i in range(len(s)):
+        if i == index:
+            l.append(x)
+        l.append(s[i])
+    if index == len(s): 
+        l.append(x)
+    return l
+
+s=[]
+x=89
+index=3
+result=push(s,x,index)
+print(result)
+
+
+

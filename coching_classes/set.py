@@ -31,12 +31,3 @@ print(t.count(2))
 print(t)
 
 
-#Dict(dictionary)
-
-#it is a collection of key and values whwre key never be duplicate,it is hetrogenious,mutable,nested,created by {} and dict()
-# keys=it retuns only all keys
-# values=it return only values
-#dict have some method that are used for delete elements 1.pop-it takes keys as params,popitem-> it removes last element from dict
-
-
-# to remove whole dict use universal method 'del' it delete dict completly
